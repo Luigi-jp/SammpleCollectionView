@@ -15,6 +15,12 @@
 		2A8D775A276B6AE300D58939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8D7758276B6AE300D58939 /* LaunchScreen.storyboard */; };
 		2A8D7762276B86CE00D58939 /* CompositionalLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8D7761276B86CE00D58939 /* CompositionalLayout.storyboard */; };
 		2A8D7764276B86E300D58939 /* CompositionalLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D7763276B86E300D58939 /* CompositionalLayoutViewController.swift */; };
+		2A8D7767276EF87300D58939 /* InstaStyleFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D7766276EF87300D58939 /* InstaStyleFeedViewController.swift */; };
+		2A8D7769276EF88700D58939 /* InstaStyleFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8D7768276EF88700D58939 /* InstaStyleFeed.storyboard */; };
+		2A8D776E276F17E400D58939 /* InstaStyleFeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D776C276F17E400D58939 /* InstaStyleFeedCollectionViewCell.swift */; };
+		2A8D776F276F17E400D58939 /* InstaStyleFeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8D776D276F17E400D58939 /* InstaStyleFeedCollectionViewCell.xib */; };
+		2A8D7772276F29E100D58939 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D7771276F29E100D58939 /* API.swift */; };
+		2A8D7774276F2B8000D58939 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D7773276F2B8000D58939 /* PostModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		2A8D775B276B6AE300D58939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A8D7761276B86CE00D58939 /* CompositionalLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompositionalLayout.storyboard; sourceTree = "<group>"; };
 		2A8D7763276B86E300D58939 /* CompositionalLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutViewController.swift; sourceTree = "<group>"; };
+		2A8D7766276EF87300D58939 /* InstaStyleFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaStyleFeedViewController.swift; sourceTree = "<group>"; };
+		2A8D7768276EF88700D58939 /* InstaStyleFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InstaStyleFeed.storyboard; sourceTree = "<group>"; };
+		2A8D776C276F17E400D58939 /* InstaStyleFeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaStyleFeedCollectionViewCell.swift; sourceTree = "<group>"; };
+		2A8D776D276F17E400D58939 /* InstaStyleFeedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstaStyleFeedCollectionViewCell.xib; sourceTree = "<group>"; };
+		2A8D7771276F29E100D58939 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		2A8D7773276F2B8000D58939 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 				2A8D774F276B6AE300D58939 /* SceneDelegate.swift */,
 				2A8D7751276B6AE300D58939 /* ViewController.swift */,
 				2A8D7753276B6AE300D58939 /* Main.storyboard */,
+				2A8D776A276EF88F00D58939 /* InstaStyleFeed */,
 				2A8D7765276B86E900D58939 /* CompositionalLayout */,
 				2A8D7756276B6AE300D58939 /* Assets.xcassets */,
 				2A8D7758276B6AE300D58939 /* LaunchScreen.storyboard */,
@@ -79,6 +92,35 @@
 				2A8D7763276B86E300D58939 /* CompositionalLayoutViewController.swift */,
 			);
 			path = CompositionalLayout;
+			sourceTree = "<group>";
+		};
+		2A8D776A276EF88F00D58939 /* InstaStyleFeed */ = {
+			isa = PBXGroup;
+			children = (
+				2A8D776B276F17AD00D58939 /* ViewController */,
+				2A8D7770276F17E900D58939 /* View */,
+				2A8D7771276F29E100D58939 /* API.swift */,
+				2A8D7773276F2B8000D58939 /* PostModel.swift */,
+			);
+			path = InstaStyleFeed;
+			sourceTree = "<group>";
+		};
+		2A8D776B276F17AD00D58939 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2A8D7766276EF87300D58939 /* InstaStyleFeedViewController.swift */,
+				2A8D7768276EF88700D58939 /* InstaStyleFeed.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2A8D7770276F17E900D58939 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A8D776C276F17E400D58939 /* InstaStyleFeedCollectionViewCell.swift */,
+				2A8D776D276F17E400D58939 /* InstaStyleFeedCollectionViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +183,9 @@
 			files = (
 				2A8D7762276B86CE00D58939 /* CompositionalLayout.storyboard in Resources */,
 				2A8D775A276B6AE300D58939 /* LaunchScreen.storyboard in Resources */,
+				2A8D776F276F17E400D58939 /* InstaStyleFeedCollectionViewCell.xib in Resources */,
 				2A8D7757276B6AE300D58939 /* Assets.xcassets in Resources */,
+				2A8D7769276EF88700D58939 /* InstaStyleFeed.storyboard in Resources */,
 				2A8D7755276B6AE300D58939 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,10 +197,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A8D776E276F17E400D58939 /* InstaStyleFeedCollectionViewCell.swift in Sources */,
+				2A8D7774276F2B8000D58939 /* PostModel.swift in Sources */,
 				2A8D7752276B6AE300D58939 /* ViewController.swift in Sources */,
 				2A8D7764276B86E300D58939 /* CompositionalLayoutViewController.swift in Sources */,
 				2A8D774E276B6AE300D58939 /* AppDelegate.swift in Sources */,
 				2A8D7750276B6AE300D58939 /* SceneDelegate.swift in Sources */,
+				2A8D7767276EF87300D58939 /* InstaStyleFeedViewController.swift in Sources */,
+				2A8D7772276F29E100D58939 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
