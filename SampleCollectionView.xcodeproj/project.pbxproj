@@ -21,6 +21,10 @@
 		2A8D776F276F17E400D58939 /* InstaStyleFeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8D776D276F17E400D58939 /* InstaStyleFeedCollectionViewCell.xib */; };
 		2A8D7772276F29E100D58939 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D7771276F29E100D58939 /* API.swift */; };
 		2A8D7774276F2B8000D58939 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D7773276F2B8000D58939 /* PostModel.swift */; };
+		2A8D777727702FBC00D58939 /* InstaStyleGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D777627702FBC00D58939 /* InstaStyleGridViewController.swift */; };
+		2A8D777927702FC300D58939 /* InstaStyleGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8D777827702FC300D58939 /* InstaStyleGrid.storyboard */; };
+		2A8D777F2770723B00D58939 /* InstaStyleGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D777D2770723B00D58939 /* InstaStyleGridCollectionViewCell.swift */; };
+		2A8D77802770723B00D58939 /* InstaStyleGridCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8D777E2770723B00D58939 /* InstaStyleGridCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		2A8D776D276F17E400D58939 /* InstaStyleFeedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstaStyleFeedCollectionViewCell.xib; sourceTree = "<group>"; };
 		2A8D7771276F29E100D58939 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		2A8D7773276F2B8000D58939 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		2A8D777627702FBC00D58939 /* InstaStyleGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaStyleGridViewController.swift; sourceTree = "<group>"; };
+		2A8D777827702FC300D58939 /* InstaStyleGrid.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InstaStyleGrid.storyboard; sourceTree = "<group>"; };
+		2A8D777D2770723B00D58939 /* InstaStyleGridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaStyleGridCollectionViewCell.swift; sourceTree = "<group>"; };
+		2A8D777E2770723B00D58939 /* InstaStyleGridCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstaStyleGridCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,7 @@
 				2A8D774F276B6AE300D58939 /* SceneDelegate.swift */,
 				2A8D7751276B6AE300D58939 /* ViewController.swift */,
 				2A8D7753276B6AE300D58939 /* Main.storyboard */,
+				2A8D777527702F9200D58939 /* InstaStyleGrid */,
 				2A8D776A276EF88F00D58939 /* InstaStyleFeed */,
 				2A8D7765276B86E900D58939 /* CompositionalLayout */,
 				2A8D7756276B6AE300D58939 /* Assets.xcassets */,
@@ -97,10 +106,10 @@
 		2A8D776A276EF88F00D58939 /* InstaStyleFeed */ = {
 			isa = PBXGroup;
 			children = (
-				2A8D776B276F17AD00D58939 /* ViewController */,
+				2A8D777B2770302A00D58939 /* Model */,
 				2A8D7770276F17E900D58939 /* View */,
-				2A8D7771276F29E100D58939 /* API.swift */,
-				2A8D7773276F2B8000D58939 /* PostModel.swift */,
+				2A8D776B276F17AD00D58939 /* ViewController */,
+				2A8D777C2770303200D58939 /* API */,
 			);
 			path = InstaStyleFeed;
 			sourceTree = "<group>";
@@ -119,6 +128,49 @@
 			children = (
 				2A8D776C276F17E400D58939 /* InstaStyleFeedCollectionViewCell.swift */,
 				2A8D776D276F17E400D58939 /* InstaStyleFeedCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A8D777527702F9200D58939 /* InstaStyleGrid */ = {
+			isa = PBXGroup;
+			children = (
+				2A8D777A27702FD100D58939 /* ViewController */,
+				2A8D77812770724000D58939 /* View */,
+			);
+			path = InstaStyleGrid;
+			sourceTree = "<group>";
+		};
+		2A8D777A27702FD100D58939 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2A8D777627702FBC00D58939 /* InstaStyleGridViewController.swift */,
+				2A8D777827702FC300D58939 /* InstaStyleGrid.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2A8D777B2770302A00D58939 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A8D7773276F2B8000D58939 /* PostModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A8D777C2770303200D58939 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2A8D7771276F29E100D58939 /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2A8D77812770724000D58939 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A8D777D2770723B00D58939 /* InstaStyleGridCollectionViewCell.swift */,
+				2A8D777E2770723B00D58939 /* InstaStyleGridCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,9 +235,11 @@
 			files = (
 				2A8D7762276B86CE00D58939 /* CompositionalLayout.storyboard in Resources */,
 				2A8D775A276B6AE300D58939 /* LaunchScreen.storyboard in Resources */,
+				2A8D77802770723B00D58939 /* InstaStyleGridCollectionViewCell.xib in Resources */,
 				2A8D776F276F17E400D58939 /* InstaStyleFeedCollectionViewCell.xib in Resources */,
 				2A8D7757276B6AE300D58939 /* Assets.xcassets in Resources */,
 				2A8D7769276EF88700D58939 /* InstaStyleFeed.storyboard in Resources */,
+				2A8D777927702FC300D58939 /* InstaStyleGrid.storyboard in Resources */,
 				2A8D7755276B6AE300D58939 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +256,8 @@
 				2A8D7752276B6AE300D58939 /* ViewController.swift in Sources */,
 				2A8D7764276B86E300D58939 /* CompositionalLayoutViewController.swift in Sources */,
 				2A8D774E276B6AE300D58939 /* AppDelegate.swift in Sources */,
+				2A8D777727702FBC00D58939 /* InstaStyleGridViewController.swift in Sources */,
+				2A8D777F2770723B00D58939 /* InstaStyleGridCollectionViewCell.swift in Sources */,
 				2A8D7750276B6AE300D58939 /* SceneDelegate.swift in Sources */,
 				2A8D7767276EF87300D58939 /* InstaStyleFeedViewController.swift in Sources */,
 				2A8D7772276F29E100D58939 /* API.swift in Sources */,

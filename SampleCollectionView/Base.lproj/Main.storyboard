@@ -32,12 +32,22 @@
                                     <segue destination="rjo-BB-Poe" kind="show" id="MNr-qt-P8W"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89L-le-0pI">
+                                <rect key="frame" x="149.5" y="594.5" width="115" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="InstaStyleGrid"/>
+                                <connections>
+                                    <segue destination="EZe-UU-xBV" kind="show" id="I7E-q1-7bX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="89L-le-0pI" firstAttribute="top" secondItem="EaL-uF-q2U" secondAttribute="bottom" constant="50" id="5Z2-3n-xaI"/>
                             <constraint firstItem="EaL-uF-q2U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="96I-UH-0MP"/>
                             <constraint firstItem="jxV-Rt-tdx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LCj-6I-1BZ"/>
+                            <constraint firstItem="89L-le-0pI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Npe-36-h4f"/>
                             <constraint firstItem="EaL-uF-q2U" firstAttribute="top" secondItem="jxV-Rt-tdx" secondAttribute="bottom" constant="50" id="uGl-iv-7dk"/>
                             <constraint firstItem="jxV-Rt-tdx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x7J-Gl-XZl"/>
                         </constraints>
@@ -67,6 +77,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVy-y2-ujQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1655" y="164"/>
+        </scene>
+        <!--InstaStyleGrid-->
+        <scene sceneID="Pec-F6-jdb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="InstaStyleGrid" id="EZe-UU-xBV" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dF9-M8-M8a"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WP9-De-ja5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1588" y="265"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rAQ-be-L31">
