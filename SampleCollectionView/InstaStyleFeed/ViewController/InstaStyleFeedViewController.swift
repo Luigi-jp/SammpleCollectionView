@@ -18,7 +18,7 @@ final class InstaStyleFeedViewController: UIViewController {
             
             // GroupSizeを設定
             let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(estimatedHeight))
-            let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
+            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
             
             // SectionSizeを設定
             let section = NSCollectionLayoutSection(group: group)
