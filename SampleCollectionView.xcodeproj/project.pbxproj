@@ -25,6 +25,10 @@
 		2A8D777927702FC300D58939 /* InstaStyleGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8D777827702FC300D58939 /* InstaStyleGrid.storyboard */; };
 		2A8D777F2770723B00D58939 /* InstaStyleGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D777D2770723B00D58939 /* InstaStyleGridCollectionViewCell.swift */; };
 		2A8D77802770723B00D58939 /* InstaStyleGridCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8D777E2770723B00D58939 /* InstaStyleGridCollectionViewCell.xib */; };
+		2A8EDC262785C8AA002C6FAB /* Tag.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8EDC252785C8AA002C6FAB /* Tag.storyboard */; };
+		2A8EDC2A2785C91C002C6FAB /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8EDC292785C91C002C6FAB /* TagViewController.swift */; };
+		2A8EDC2E2785C990002C6FAB /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8EDC2C2785C990002C6FAB /* TagCollectionViewCell.swift */; };
+		2A8EDC2F2785C990002C6FAB /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8EDC2D2785C990002C6FAB /* TagCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		2A8D777827702FC300D58939 /* InstaStyleGrid.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InstaStyleGrid.storyboard; sourceTree = "<group>"; };
 		2A8D777D2770723B00D58939 /* InstaStyleGridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaStyleGridCollectionViewCell.swift; sourceTree = "<group>"; };
 		2A8D777E2770723B00D58939 /* InstaStyleGridCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstaStyleGridCollectionViewCell.xib; sourceTree = "<group>"; };
+		2A8EDC252785C8AA002C6FAB /* Tag.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tag.storyboard; sourceTree = "<group>"; };
+		2A8EDC292785C91C002C6FAB /* TagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
+		2A8EDC2C2785C990002C6FAB /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
+		2A8EDC2D2785C990002C6FAB /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,7 @@
 				2A8D777527702F9200D58939 /* InstaStyleGrid */,
 				2A8D776A276EF88F00D58939 /* InstaStyleFeed */,
 				2A8D7765276B86E900D58939 /* CompositionalLayout */,
+				2A8EDC222785C883002C6FAB /* Tag */,
 				2A8D7756276B6AE300D58939 /* Assets.xcassets */,
 				2A8D7758276B6AE300D58939 /* LaunchScreen.storyboard */,
 				2A8D775B276B6AE300D58939 /* Info.plist */,
@@ -175,6 +184,33 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		2A8EDC222785C883002C6FAB /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				2A8EDC2B2785C977002C6FAB /* ViewController */,
+				2A8EDC302785C994002C6FAB /* View */,
+			);
+			path = Tag;
+			sourceTree = "<group>";
+		};
+		2A8EDC2B2785C977002C6FAB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2A8EDC252785C8AA002C6FAB /* Tag.storyboard */,
+				2A8EDC292785C91C002C6FAB /* TagViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2A8EDC302785C994002C6FAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A8EDC2C2785C990002C6FAB /* TagCollectionViewCell.swift */,
+				2A8EDC2D2785C990002C6FAB /* TagCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,11 +270,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A8D7762276B86CE00D58939 /* CompositionalLayout.storyboard in Resources */,
+				2A8EDC262785C8AA002C6FAB /* Tag.storyboard in Resources */,
 				2A8D775A276B6AE300D58939 /* LaunchScreen.storyboard in Resources */,
 				2A8D77802770723B00D58939 /* InstaStyleGridCollectionViewCell.xib in Resources */,
 				2A8D776F276F17E400D58939 /* InstaStyleFeedCollectionViewCell.xib in Resources */,
 				2A8D7757276B6AE300D58939 /* Assets.xcassets in Resources */,
 				2A8D7769276EF88700D58939 /* InstaStyleFeed.storyboard in Resources */,
+				2A8EDC2F2785C990002C6FAB /* TagCollectionViewCell.xib in Resources */,
 				2A8D777927702FC300D58939 /* InstaStyleGrid.storyboard in Resources */,
 				2A8D7755276B6AE300D58939 /* Main.storyboard in Resources */,
 			);
@@ -257,8 +295,10 @@
 				2A8D7764276B86E300D58939 /* CompositionalLayoutViewController.swift in Sources */,
 				2A8D774E276B6AE300D58939 /* AppDelegate.swift in Sources */,
 				2A8D777727702FBC00D58939 /* InstaStyleGridViewController.swift in Sources */,
+				2A8EDC2A2785C91C002C6FAB /* TagViewController.swift in Sources */,
 				2A8D777F2770723B00D58939 /* InstaStyleGridCollectionViewCell.swift in Sources */,
 				2A8D7750276B6AE300D58939 /* SceneDelegate.swift in Sources */,
+				2A8EDC2E2785C990002C6FAB /* TagCollectionViewCell.swift in Sources */,
 				2A8D7767276EF87300D58939 /* InstaStyleFeedViewController.swift in Sources */,
 				2A8D7772276F29E100D58939 /* API.swift in Sources */,
 			);
