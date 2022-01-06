@@ -38,7 +38,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tagCollectionView" destination="Udd-XD-FQd" id="vSw-ik-nrl"/>
+                        <outlet property="collectionView" destination="Udd-XD-FQd" id="vSw-ik-nrl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

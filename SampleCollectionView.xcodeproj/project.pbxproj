@@ -29,6 +29,8 @@
 		2A8EDC2A2785C91C002C6FAB /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8EDC292785C91C002C6FAB /* TagViewController.swift */; };
 		2A8EDC2E2785C990002C6FAB /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8EDC2C2785C990002C6FAB /* TagCollectionViewCell.swift */; };
 		2A8EDC2F2785C990002C6FAB /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8EDC2D2785C990002C6FAB /* TagCollectionViewCell.xib */; };
+		2A8EDC3327870F04002C6FAB /* AddTagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8EDC3127870F04002C6FAB /* AddTagCollectionViewCell.swift */; };
+		2A8EDC3427870F04002C6FAB /* AddTagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8EDC3227870F04002C6FAB /* AddTagCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		2A8EDC292785C91C002C6FAB /* TagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
 		2A8EDC2C2785C990002C6FAB /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
 		2A8EDC2D2785C990002C6FAB /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
+		2A8EDC3127870F04002C6FAB /* AddTagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTagCollectionViewCell.swift; sourceTree = "<group>"; };
+		2A8EDC3227870F04002C6FAB /* AddTagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTagCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +211,8 @@
 			children = (
 				2A8EDC2C2785C990002C6FAB /* TagCollectionViewCell.swift */,
 				2A8EDC2D2785C990002C6FAB /* TagCollectionViewCell.xib */,
+				2A8EDC3127870F04002C6FAB /* AddTagCollectionViewCell.swift */,
+				2A8EDC3227870F04002C6FAB /* AddTagCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,6 +281,7 @@
 				2A8D77802770723B00D58939 /* InstaStyleGridCollectionViewCell.xib in Resources */,
 				2A8D776F276F17E400D58939 /* InstaStyleFeedCollectionViewCell.xib in Resources */,
 				2A8D7757276B6AE300D58939 /* Assets.xcassets in Resources */,
+				2A8EDC3427870F04002C6FAB /* AddTagCollectionViewCell.xib in Resources */,
 				2A8D7769276EF88700D58939 /* InstaStyleFeed.storyboard in Resources */,
 				2A8EDC2F2785C990002C6FAB /* TagCollectionViewCell.xib in Resources */,
 				2A8D777927702FC300D58939 /* InstaStyleGrid.storyboard in Resources */,
@@ -298,6 +305,7 @@
 				2A8EDC2A2785C91C002C6FAB /* TagViewController.swift in Sources */,
 				2A8D777F2770723B00D58939 /* InstaStyleGridCollectionViewCell.swift in Sources */,
 				2A8D7750276B6AE300D58939 /* SceneDelegate.swift in Sources */,
+				2A8EDC3327870F04002C6FAB /* AddTagCollectionViewCell.swift in Sources */,
 				2A8EDC2E2785C990002C6FAB /* TagCollectionViewCell.swift in Sources */,
 				2A8D7767276EF87300D58939 /* InstaStyleFeedViewController.swift in Sources */,
 				2A8D7772276F29E100D58939 /* API.swift in Sources */,
