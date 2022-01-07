@@ -19,7 +19,8 @@ enum Item: Hashable {
 
 class TagViewController: UIViewController {
 
-    var tags: [String] = []
+    var tags: [String] = ["Apple"]
+    let badgeElementKind = "badge-element-kind"
     
     private lazy var compositionalLayout: UICollectionViewCompositionalLayout = {
         let layout = UICollectionViewCompositionalLayout { (sectionIndex: Int, layoutEnvironment :NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
@@ -35,9 +36,13 @@ class TagViewController: UIViewController {
                 return section
                 
             case SectionKind.tagList.rawValue:
+                let badgeAnchor = NSCollectionLayoutAnchor(edges: [.top, .trailing], fractionalOffset: CGPoint(x: 0.3, y: -0.3))
+                let badgeSize = NSCollectionLayoutSize(widthDimension: .absolute(20), heightDimension: .absolute(20))
+                let badge = NSCollectionLayoutSupplementaryItem(layoutSize: badgeSize, elementKind: self.badgeElementKind, containerAnchor: badgeAnchor)
+                
                 let itemWidth = self.collectionView.bounds.width / 3
                 let itemSize = NSCollectionLayoutSize(widthDimension: .estimated(itemWidth), heightDimension: .estimated(30))
-                let item = NSCollectionLayoutItem(layoutSize: itemSize)
+                let item = NSCollectionLayoutItem(layoutSize: itemSize, supplementaryItems: [badge])
                 
                 let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(30))
                 let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
@@ -69,6 +74,7 @@ class TagViewController: UIViewController {
     func setCollectionView() {
         collectionView.register(UINib(nibName: AddTagCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: AddTagCollectionViewCell.identifier)
         collectionView.register(UINib(nibName: TagCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: TagCollectionViewCell.identifier)
+        collectionView.register(UINib(nibName: DeleteCollectionReusableView.identifier, bundle: nil), forSupplementaryViewOfKind: badgeElementKind, withReuseIdentifier: DeleteCollectionReusableView.identifier)
         
         collectionView.collectionViewLayout = compositionalLayout
         setDatasource()
@@ -92,6 +98,21 @@ class TagViewController: UIViewController {
                 cell.configure(tagName: tagName)
                 return cell
             }
+        }
+        
+        datasource.supplementaryViewProvider = { (collectionView: UICollectionView, kind: String, indexPath: IndexPath) -> UICollectionReusableView? in
+            switch indexPath.section {
+            case SectionKind.tagList.rawValue:
+                if kind == self.badgeElementKind {
+                    guard let badge = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: DeleteCollectionReusableView.identifier, for: indexPath) as? DeleteCollectionReusableView else {
+                        fatalError()
+                    }
+                    return badge
+                }
+            default:
+                break
+            }
+            return nil
         }
     }
     

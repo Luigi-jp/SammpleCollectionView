@@ -31,6 +31,8 @@
 		2A8EDC2F2785C990002C6FAB /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8EDC2D2785C990002C6FAB /* TagCollectionViewCell.xib */; };
 		2A8EDC3327870F04002C6FAB /* AddTagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8EDC3127870F04002C6FAB /* AddTagCollectionViewCell.swift */; };
 		2A8EDC3427870F04002C6FAB /* AddTagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8EDC3227870F04002C6FAB /* AddTagCollectionViewCell.xib */; };
+		2A8EDC372787501C002C6FAB /* DeleteCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8EDC352787501C002C6FAB /* DeleteCollectionReusableView.swift */; };
+		2A8EDC382787501C002C6FAB /* DeleteCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8EDC362787501C002C6FAB /* DeleteCollectionReusableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		2A8EDC2D2785C990002C6FAB /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
 		2A8EDC3127870F04002C6FAB /* AddTagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTagCollectionViewCell.swift; sourceTree = "<group>"; };
 		2A8EDC3227870F04002C6FAB /* AddTagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTagCollectionViewCell.xib; sourceTree = "<group>"; };
+		2A8EDC352787501C002C6FAB /* DeleteCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteCollectionReusableView.swift; sourceTree = "<group>"; };
+		2A8EDC362787501C002C6FAB /* DeleteCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteCollectionReusableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +217,8 @@
 				2A8EDC2D2785C990002C6FAB /* TagCollectionViewCell.xib */,
 				2A8EDC3127870F04002C6FAB /* AddTagCollectionViewCell.swift */,
 				2A8EDC3227870F04002C6FAB /* AddTagCollectionViewCell.xib */,
+				2A8EDC352787501C002C6FAB /* DeleteCollectionReusableView.swift */,
+				2A8EDC362787501C002C6FAB /* DeleteCollectionReusableView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,6 +285,7 @@
 				2A8EDC262785C8AA002C6FAB /* Tag.storyboard in Resources */,
 				2A8D775A276B6AE300D58939 /* LaunchScreen.storyboard in Resources */,
 				2A8D77802770723B00D58939 /* InstaStyleGridCollectionViewCell.xib in Resources */,
+				2A8EDC382787501C002C6FAB /* DeleteCollectionReusableView.xib in Resources */,
 				2A8D776F276F17E400D58939 /* InstaStyleFeedCollectionViewCell.xib in Resources */,
 				2A8D7757276B6AE300D58939 /* Assets.xcassets in Resources */,
 				2A8EDC3427870F04002C6FAB /* AddTagCollectionViewCell.xib in Resources */,
@@ -296,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A8EDC372787501C002C6FAB /* DeleteCollectionReusableView.swift in Sources */,
 				2A8D776E276F17E400D58939 /* InstaStyleFeedCollectionViewCell.swift in Sources */,
 				2A8D7774276F2B8000D58939 /* PostModel.swift in Sources */,
 				2A8D7752276B6AE300D58939 /* ViewController.swift in Sources */,
