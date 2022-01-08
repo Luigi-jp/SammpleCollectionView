@@ -7,11 +7,18 @@
 
 import UIKit
 
+protocol DeleteCollectionReusableViewDelegate {
+    func deleteCell(itemIdentifier: Item)
+}
+
 class DeleteCollectionReusableView: UICollectionReusableView {
     
     static var identifier: String {
         return String(describing: self)
     }
+    
+    var delegate: DeleteCollectionReusableViewDelegate?
+    var itemIdentifier: Item?
 
     @IBOutlet weak var button: UIButton!
     
@@ -23,7 +30,20 @@ class DeleteCollectionReusableView: UICollectionReusableView {
         button.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        itemIdentifier = nil
+    }
+    
+    func configure(itemIdentifier: Item) {
+        self.itemIdentifier = itemIdentifier
+    }
+    
     @objc func tapButton() {
         print("タップ")
+        guard let itemIdentifier = itemIdentifier else {
+            return
+        }
+        delegate?.deleteCell(itemIdentifier: itemIdentifier)
     }
 }

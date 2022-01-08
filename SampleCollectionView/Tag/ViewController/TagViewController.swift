@@ -19,7 +19,7 @@ enum Item: Hashable {
 
 class TagViewController: UIViewController {
 
-    var tags: [String] = ["Apple"]
+    var tags: [String] = ["Apple", "Logicool", "Anker", "Amazon", "Meta", "Google"]
     let badgeElementKind = "badge-element-kind"
     
     private lazy var compositionalLayout: UICollectionViewCompositionalLayout = {
@@ -107,6 +107,11 @@ class TagViewController: UIViewController {
                     guard let badge = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: DeleteCollectionReusableView.identifier, for: indexPath) as? DeleteCollectionReusableView else {
                         fatalError()
                     }
+                    guard let identifire = self.datasource.itemIdentifier(for: indexPath) else {
+                        fatalError()
+                    }
+                    badge.configure(itemIdentifier: identifire)
+                    badge.delegate = self
                     return badge
                 }
             default:
@@ -129,7 +134,21 @@ class TagViewController: UIViewController {
 
 extension TagViewController: AddTagCollectionViewCellDelegate {
     func addTag(tagName: String) {
+        guard !tags.contains(tagName) else {
+            print("同じタグを複数作成できません。")
+            return
+        }
         tags.append(tagName)
+        apply()
+    }
+}
+
+extension TagViewController: DeleteCollectionReusableViewDelegate {
+    func deleteCell(itemIdentifier: Item) {
+        guard let indexPath = datasource.indexPath(for: itemIdentifier) else {
+            fatalError()
+        }
+        tags.remove(at: indexPath.row)
         apply()
     }
 }
