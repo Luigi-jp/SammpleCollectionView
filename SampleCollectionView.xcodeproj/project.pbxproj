@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A5E921C27AE2A8900E6EC2B /* GridDesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E921B27AE2A8900E6EC2B /* GridDesignViewController.swift */; };
+		2A5E921E27AE2A9600E6EC2B /* GridDesign.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5E921D27AE2A9600E6EC2B /* GridDesign.storyboard */; };
+		2A5E922027AE736700E6EC2B /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E921F27AE736700E6EC2B /* ColumnFlowLayout.swift */; };
+		2A5E922327AE745D00E6EC2B /* GridDesignCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E922127AE745D00E6EC2B /* GridDesignCollectionViewCell.swift */; };
+		2A5E922427AE745D00E6EC2B /* GridDesignCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A5E922227AE745D00E6EC2B /* GridDesignCollectionViewCell.xib */; };
 		2A8D774E276B6AE300D58939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D774D276B6AE300D58939 /* AppDelegate.swift */; };
 		2A8D7750276B6AE300D58939 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D774F276B6AE300D58939 /* SceneDelegate.swift */; };
 		2A8D7752276B6AE300D58939 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D7751276B6AE300D58939 /* ViewController.swift */; };
@@ -36,6 +41,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A5E921B27AE2A8900E6EC2B /* GridDesignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridDesignViewController.swift; sourceTree = "<group>"; };
+		2A5E921D27AE2A9600E6EC2B /* GridDesign.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GridDesign.storyboard; sourceTree = "<group>"; };
+		2A5E921F27AE736700E6EC2B /* ColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnFlowLayout.swift; sourceTree = "<group>"; };
+		2A5E922127AE745D00E6EC2B /* GridDesignCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridDesignCollectionViewCell.swift; sourceTree = "<group>"; };
+		2A5E922227AE745D00E6EC2B /* GridDesignCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GridDesignCollectionViewCell.xib; sourceTree = "<group>"; };
 		2A8D774A276B6AE300D58939 /* SampleCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8D774D276B6AE300D58939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A8D774F276B6AE300D58939 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +87,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A5E921A27AE258400E6EC2B /* FlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2A5E921B27AE2A8900E6EC2B /* GridDesignViewController.swift */,
+				2A5E921D27AE2A9600E6EC2B /* GridDesign.storyboard */,
+				2A5E921F27AE736700E6EC2B /* ColumnFlowLayout.swift */,
+				2A5E922127AE745D00E6EC2B /* GridDesignCollectionViewCell.swift */,
+				2A5E922227AE745D00E6EC2B /* GridDesignCollectionViewCell.xib */,
+			);
+			path = FlowLayout;
+			sourceTree = "<group>";
+		};
 		2A8D7741276B6AE300D58939 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +122,7 @@
 				2A8D774F276B6AE300D58939 /* SceneDelegate.swift */,
 				2A8D7751276B6AE300D58939 /* ViewController.swift */,
 				2A8D7753276B6AE300D58939 /* Main.storyboard */,
+				2A5E921A27AE258400E6EC2B /* FlowLayout */,
 				2A8D777527702F9200D58939 /* InstaStyleGrid */,
 				2A8D776A276EF88F00D58939 /* InstaStyleFeed */,
 				2A8D7765276B86E900D58939 /* CompositionalLayout */,
@@ -291,8 +314,10 @@
 				2A8EDC3427870F04002C6FAB /* AddTagCollectionViewCell.xib in Resources */,
 				2A8D7769276EF88700D58939 /* InstaStyleFeed.storyboard in Resources */,
 				2A8EDC2F2785C990002C6FAB /* TagCollectionViewCell.xib in Resources */,
+				2A5E922427AE745D00E6EC2B /* GridDesignCollectionViewCell.xib in Resources */,
 				2A8D777927702FC300D58939 /* InstaStyleGrid.storyboard in Resources */,
 				2A8D7755276B6AE300D58939 /* Main.storyboard in Resources */,
+				2A5E921E27AE2A9600E6EC2B /* GridDesign.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,11 +333,14 @@
 				2A8D7774276F2B8000D58939 /* PostModel.swift in Sources */,
 				2A8D7752276B6AE300D58939 /* ViewController.swift in Sources */,
 				2A8D7764276B86E300D58939 /* CompositionalLayoutViewController.swift in Sources */,
+				2A5E922027AE736700E6EC2B /* ColumnFlowLayout.swift in Sources */,
 				2A8D774E276B6AE300D58939 /* AppDelegate.swift in Sources */,
 				2A8D777727702FBC00D58939 /* InstaStyleGridViewController.swift in Sources */,
+				2A5E922327AE745D00E6EC2B /* GridDesignCollectionViewCell.swift in Sources */,
 				2A8EDC2A2785C91C002C6FAB /* TagViewController.swift in Sources */,
 				2A8D777F2770723B00D58939 /* InstaStyleGridCollectionViewCell.swift in Sources */,
 				2A8D7750276B6AE300D58939 /* SceneDelegate.swift in Sources */,
+				2A5E921C27AE2A8900E6EC2B /* GridDesignViewController.swift in Sources */,
 				2A8EDC3327870F04002C6FAB /* AddTagCollectionViewCell.swift in Sources */,
 				2A8EDC2E2785C990002C6FAB /* TagCollectionViewCell.swift in Sources */,
 				2A8D7767276EF87300D58939 /* InstaStyleFeedViewController.swift in Sources */,
